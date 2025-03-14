@@ -2,7 +2,6 @@ import { imageDimensionsFromData } from 'image-dimensions';
 import setCookie from 'set-cookie-parser';
 import { LENS_ENDPOINT, MIME_TO_EXT, EXT_TO_MIME, SUPPORTED_MIMES } from './consts.js';
 import { parseCookies, sleep } from './utils.js';
-import fs from 'fs';
 import * as cheerio from 'cheerio';
 export class IrsError extends Error {
     constructor(message, code, headers, body) {
@@ -102,7 +101,6 @@ export default class IrsCore {
         });
 
         let text = await response.text();
-        fs.writeFileSync('response.html', text);
         this.#setCookies(response.headers.get('set-cookie'));
 
         // in some of the EU countries, Google requires cookie consent
