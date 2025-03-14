@@ -1,0 +1,44 @@
+{
+  "name": "image-reverse-search",
+  "version": "1.0.0",
+  "description": "A powerful and easy-to-use library for performing reverse image searches using Google Lens",
+  "main": "src/index.js",
+  "types": "src/types.d.ts",
+  "files": [
+    "./src/*"
+  ],
+  "scripts": {
+    "start": "node test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejasLamba2006/chimage-reverse-search.git"
+  },
+  "keywords": [
+    "google",
+    "lens",
+    "lens",
+    "chrome",
+    "lens",
+    "reverse",
+    "engineering",
+    "free",
+    "ocr"
+  ],
+  "author": "TejasLamba2006",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TejasLamba2006/chimage-reverse-search/issues"
+  },
+  "homepage": "https://github.com/TejasLamba2006/chimage-reverse-search#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "file-type": "^19.0.0",
+    "image-dimensions": "^2.3.0",
+    "set-cookie-parser": "^2.6.0",
+    "sharp": "^0.33.2",
+    "undici": "^5.28.3"
+  }
+}
