@@ -158,7 +158,7 @@ export default class IrsCore {
         const $ = cheerio.load(html);
         const similarImages = [];
 
-        $('.aah4tc > div').each((i, elem) => {
+        $('.G19kAf.ENn9pd').each((i, elem) => {
             const title = $(elem).find('.UAiK1e').text().trim();
             const link = $(elem).find('a').attr('href');
             const imageUrl = $(elem).find('img.wETe9b').attr('src');
@@ -167,7 +167,6 @@ export default class IrsCore {
 
             similarImages.push(new IrsResult(title, link, imageUrl, source, faviconUrl));
         });
-
         return similarImages;
     }
     async scanByURL(url) {
