@@ -1,6 +1,6 @@
 {
   "name": "image-reverse-search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful and easy-to-use library for performing reverse image searches using Google Lens",
   "main": "src/index.js",
   "types": "src/types.d.ts",
@@ -37,5 +37,10 @@
     "set-cookie-parser": "^2.6.0",
     "sharp": "^0.33.2",
     "undici": "^5.28.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
   }
 }
